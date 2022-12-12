@@ -28,8 +28,8 @@ class Monkey:
                 item += self.arg
             elif self.operation == "^":
                 item = math.pow(item, self.arg)
-
-            item = int(item/3)
+            # item = int(item/3)
+            item = int(item)%(3*11*7*2*19*5*17*13)
             if item % self.division == 0:
                 result.append((item, self.trueMonkey))
             else:

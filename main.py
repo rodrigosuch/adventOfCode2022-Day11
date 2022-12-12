@@ -10,7 +10,7 @@ monkey6 = Monkey([79, 83, 64, 52, 77, 56, 63, 92], "+", 6, 17, 2, 0)
 monkey7 = Monkey([50, 97, 76, 96, 80, 56], "+", 3, 13, 3, 5)
 
 monkeys = [monkey0, monkey1, monkey2, monkey3, monkey4, monkey5, monkey6, monkey7]
-for round in range(1, 21):
+for round in range(1, 10001):
     for monkey in monkeys:
         result = monkey.run_cycle()
         for item in result:
